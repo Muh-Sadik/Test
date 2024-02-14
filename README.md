@@ -2,6 +2,8 @@
 Test
 
 # Key
-* ==first
-* M
-* 88
+Music-driven gameplay.
+• dsd
+Targets amateur players improving on consistency.
+•ss
+Dynamic tempo adjustments for playersof all levels.
