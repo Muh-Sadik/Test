@@ -33,3 +33,6 @@ Paul provides some explaination about installing the proper gcc compiler. I didn
   $ sudo chmod +x /usr/bin/rpi-source
   $ /usr/bin/rpi-source -q --tag-update
   $ rpi-source
+
+
+  
