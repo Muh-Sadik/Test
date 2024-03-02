@@ -24,7 +24,7 @@ LRCL  - BCM 19 (pin 35)
 
 # Software Setup
 **I2S Configuration**  
-:- Some modifications are needed:
+Some modifications are needed:
 
 * Uncomment ```#dtparam=i2s=on``` in ``` sudo nano /boot/firmware/config.txt ```
 * Add ``` dtoverlay=i2s-mmap  ``` and ``` dtoverlay=googlevoicehat-soundcard  ``` This sets up the I2S mapping and activates the I2S sound card overlay.
