@@ -69,3 +69,4 @@ Use the alsamixer command to configure ALSA settings and adjust microphone level
 Run alsamixer from the terminal and use the arrow keys to navigate and adjust the settings.  
 *Try this recording command: ```arecord -D plughw:1 -f cd test.wav``` what is the differenec from the ones we used before?  
 
+g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
