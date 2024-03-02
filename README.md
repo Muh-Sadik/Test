@@ -24,7 +24,7 @@ LRCL  - BCM 19 (pin 35)
 
 # Software Setup
 **I2S Configuration:**  
-Some modifications are needed:
+Some modifications are needed tp enable I2S on Raspberry Pi:
 
 * Uncomment ```#dtparam=i2s=on``` in ``` sudo nano /boot/firmware/config.txt ```
 * Add ``` dtoverlay=i2s-mmap  ``` and ``` dtoverlay=googlevoicehat-soundcard  ``` This sets up the I2S mapping and activates the I2S sound card overlay.
@@ -48,7 +48,7 @@ gcc (Raspbian 12.2.0-14+rpi1) 12.2.0
 
 **ALSA Configuration:**
   
-Install alsa library
+Install Alsa library
 ```
 $ sudo apt install libasound2-dev
 $ sudo apt-get install alsa-utils sox
