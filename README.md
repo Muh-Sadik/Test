@@ -48,7 +48,7 @@ gcc (Raspbian 12.2.0-14+rpi1) 12.2.0
 
 **ALSA Configuration:**
   
-Install alsa library:
+Install alsa library
 ```
 $ sudo apt install libasound2-dev
 $ sudo apt-get install alsa-utils sox
