@@ -20,7 +20,7 @@ Gnd – Gnd
 BCLK  - BCM 18 (pin 12)
 DOUT  - BCM 20 (pin 38)
 LRCL  - BCM 19 (pin 35)
-
+```
 # I2S Configuration
 Some modifications are needed:
 ---------
