@@ -12,7 +12,7 @@ Instagram: https://www.instagram.com/racket.rhythm/
 Adrafruit I2S MEMs Microphone breakout board-SPH0645 was used in this setup. 
 Microphone breakout board documentation can be found [here](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-i2s-mems-microphone-breakout.pdf). GPIO pins connection are as follows:
 
-```
+
 Mic - RPi
 ---------
 VCC - 3.3v
