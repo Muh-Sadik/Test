@@ -64,5 +64,7 @@ $ sudo apt-get install alsa-utils sox
  * Alsa library
  * rpi-i2s repositorie: https://github.com/nejohnson2/rpi-i2s.git
 
-
-  
+### To be added later
+Use the alsamixer command to configure ALSA settings and adjust microphone levels, this allows you to control the input volume and other audio settings.
+Run alsamixer from the terminal and use the arrow keys to navigate and adjust the settings.
+*Try this recording command: ```arecord -D plughw:1 -f cd test.wav``` what is the differenec from the ones we used before?
