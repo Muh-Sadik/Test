@@ -9,6 +9,12 @@ Instagram: https://www.instagram.com/racket.rhythm/
 * Dynamic tempo adjustments for players of all levels.
 
 # Hardware Setup
+Adrafruit I2S MEMs Microphone breakout board-SPH0645 was used in this setup. 
+Microphone breakout board documentation can be found here(chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cdn-learn.adafruit.com/downloads/pdf/adafruit-i2s-mems-microphone-breakout.pdf). The connection is as follows:
+
+
+
+
 i2s Configuration
 
 # Kernel Compiling
