@@ -38,7 +38,7 @@ $ sudo rpi-update
 $ gcc --version
 gcc (Raspbian 12.2.0-14+rpi1) 12.2.0
 
-* Mic dependencies that needed to be installed:
+# Mic dependencies that needed to be installed:
   $ sudo apt-get install bc
   $ sudo apt-get install libncurses5-dev
   ```
