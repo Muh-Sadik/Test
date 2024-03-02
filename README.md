@@ -29,26 +29,25 @@ Some modifications are needed:
 * Add ``` snd-bcm2835   ``` to ``` sudo nano /etc/modules ```
 
 # Kernel Compiling
-Paul provides some explaination about installing the proper gcc compiler. I didnt have any propblems with this.
+* Update and install necessary dependencies:
+```
+$ sudo apt-get update
+$ sudo rpi-update
 
-* First update and install necessary dependencies:
-  $ sudo apt-get update.
-  $ sudo rpi-update.
-  $ gcc --version.
-  gcc (Raspbian 4.9.2-10) 4.9.2
-  
-* mics dependencies that needed to be installed
+# Check your Raspbian version:
+$ gcc --version
+gcc (Raspbian 12.2.0-14+rpi1) 12.2.0
+
+* Mic dependencies that needed to be installed:
   $ sudo apt-get install bc
   $ sudo apt-get install libncurses5-dev
-  
-* just for good measure
-  $ sudo apt-get update
-  $ sudo rpi-update
-
-* Get the kernel source and compile. This takes a very long time on an RPi. I believe there are ways of doing this on a local machine but I didnt try. I would recommend installing the application sudo apt-get install screen.
-  $ sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
-  $ sudo chmod +x /usr/bin/rpi-source
-  $ /usr/bin/rpi-source -q --tag-update
+  ```
+ # ALSA Configuration
+Install alsa library:
+```
+$ sudo apt install libasound2-dev
+$ sudo apt-get install alsa-utils sox
+ ```
 
 # References
 
