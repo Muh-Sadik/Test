@@ -56,8 +56,8 @@ $ sudo apt-get install alsa-utils sox
 
 # References
 
-  Alsa library
-  rpi-i2s repositorie: https://github.com/nejohnson2/rpi-i2s.git
+ * Alsa library
+ * rpi-i2s repositorie: https://github.com/nejohnson2/rpi-i2s.git
 
 
   
