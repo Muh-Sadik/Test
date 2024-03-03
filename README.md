@@ -72,4 +72,6 @@ Use the alsamixer command to configure ALSA settings and adjust microphone level
 Run alsamixer from the terminal and use the arrow keys to navigate and adjust the settings.  
 *Try this recording command: ```arecord -D plughw:1 -f cd test.wav``` what is the differenec from the ones we used before?  
 *Add the data shett page - important - chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/908/SPH0645LM4H-B.pdf
+
+* Adafruit link: https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/3421/6691114?utm_adgroup=&utm_term=&productid=6691114&utm_content=&gad_source=1
 g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
