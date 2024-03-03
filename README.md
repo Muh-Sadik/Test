@@ -71,5 +71,5 @@ $ sudo apt-get install alsa-utils sox
 Use the alsamixer command to configure ALSA settings and adjust microphone levels, this allows you to control the input volume and other audio settings.  
 Run alsamixer from the terminal and use the arrow keys to navigate and adjust the settings.  
 *Try this recording command: ```arecord -D plughw:1 -f cd test.wav``` what is the differenec from the ones we used before?  
-
+*Add the data shett page - important - chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/908/SPH0645LM4H-B.pdf
 g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
