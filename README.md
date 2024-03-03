@@ -74,4 +74,6 @@ Run alsamixer from the terminal and use the arrow keys to navigate and adjust th
 *Add the data shett page - important - chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/908/SPH0645LM4H-B.pdf
 
 * Adafruit link: https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/3421/6691114?utm_adgroup=&utm_term=&productid=6691114&utm_content=&gad_source=1
+OR
+https://www.adafruit.com/product/3421
 g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
