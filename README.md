@@ -76,4 +76,9 @@ Run alsamixer from the terminal and use the arrow keys to navigate and adjust th
 * Adafruit link: https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/3421/6691114?utm_adgroup=&utm_term=&productid=6691114&utm_content=&gad_source=1
 OR
 https://www.adafruit.com/product/3421
-g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
+
+g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory  
+
+* 3 files and main excute command: g++  main.cpp audio_processor.cpp -o class -lfftw3f -lportaudio -L/path/to/fftw/library/directory
+
+
