@@ -46,9 +46,9 @@ gcc (Raspbian 12.2.0-14+rpi1) 12.2.0
   $ sudo apt-get install libncurses5-dev
   ```
 
-**ALSA Configuration:**
+**Libraries Configuration:**
   
-Install Alsa library
+* Install Alsa library
 ```
 $ sudo apt install libasound2-dev
 $ sudo apt-get install alsa-utils sox
