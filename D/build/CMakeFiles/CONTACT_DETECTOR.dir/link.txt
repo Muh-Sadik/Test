@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CONTACT_DETECTOR.dir/main.cpp.o CMakeFiles/CONTACT_DETECTOR.dir/CONTACT_DETECTOR.cpp.o -o CONTACT_DETECTOR  -lportaudio -lfftw3 -lportaudio /usr/lib/arm-linux-gnueabihf/libfftw3f.a -lfftw3 /usr/lib/arm-linux-gnueabihf/libfftw3f.a 

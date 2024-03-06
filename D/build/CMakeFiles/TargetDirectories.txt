@@ -1,0 +1,3 @@
+/home/muhammed/Documents/racketrythym/src/tests/lab_mictests/build/CMakeFiles/CONTACT_DETECTOR.dir
+/home/muhammed/Documents/racketrythym/src/tests/lab_mictests/build/CMakeFiles/edit_cache.dir
+/home/muhammed/Documents/racketrythym/src/tests/lab_mictests/build/CMakeFiles/rebuild_cache.dir
