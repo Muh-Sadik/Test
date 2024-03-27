@@ -10,16 +10,18 @@ Instagram: https://www.instagram.com/racket.rhythm/
 
 # Hardware Setup
 Adrafruit I2S MEMs Microphone breakout board-SPH0645 was used in this setup. 
-Microphone breakout board documentation can be found [here](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-i2s-mems-microphone-breakout.pdf). GPIO pins connection are as follows:
+Microphone breakout board documentation can be found here: [Adafruit I2S MEMS Microphone Breakout](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-i2s-mems-microphone-breakout.pdf), and [SPH0645LM4H-B Rev C Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/908/SPH0645LM4H-B.pdf). GPIO pins connection are as follows:
 
 ```
 Mic - RPi
 ---------
 VCC - 3.3v
 Gnd – Gnd
-BCLK  - BCM 18 (pin 12)
-DOUT  - BCM 20 (pin 38)
-LRCL  - BCM 19 (pin 35)
+BCLK - BCM 18 (pin 12)
+DOUT - BCM 20 (pin 38)
+LRCL - BCM 19 (pin 35)
+SEL  - Mono: no connection needed
+     - Stero: right channel 3.3v, left channel Gnd
 ```
 
 # Software Setup
@@ -27,7 +29,7 @@ LRCL  - BCM 19 (pin 35)
 To enable I2S on Raspberry Pi some modifications are needed:
 
 * Uncomment ```#dtparam=i2s=on``` in ``` sudo nano /boot/firmware/config.txt ```
-* Add ``` dtoverlay=i2s-mmap  ``` and ``` dtoverlay=googlevoicehat-soundcard  ``` This sets up the I2S mapping and activates the I2S sound card overlay.
+* Add to a new line ``` dtoverlay=i2s-mmap  ``` and ``` dtoverlay=googlevoicehat-soundcard  ``` This sets up the I2S mapping and activates the I2S sound card overlay.
 * Add ``` snd-bcm2835   ``` to ``` sudo nano /etc/modules ```
 
 **Kernel Compiling:**
@@ -45,7 +47,6 @@ gcc (Raspbian 12.2.0-14+rpi1) 12.2.0
   $ sudo apt-get install bc
   $ sudo apt-get install libncurses5-dev
   ```
-
 **Libraries Configuration:**
   
 * Install Alsa library:
@@ -54,18 +55,25 @@ $ sudo apt install libasound2-dev
 $ sudo apt-get install alsa-utils sox
  ```
 * Install PortAudio library: ``` sudo apt-get install portaudio19-dev ```
+* Install SoundTouch library: ``` sudo apt install libsoundtouch-dev ```
 * Install FFTW library: ``` sudo apt-get install libfftw3-dev ```
+* Install PulseAudio library: ``` sudo apt install pulseaudio ```
 
 **Test the Microphone:**
  
-* For mono system, use ```arecord -c 1 -r 48000 -f S32_LE -t wav -v filename.wav ``` or ``` Mono: arecord -f S32_LE -r 8000 -c 1 shaker2.wav  ```
-* To play the file, use ``` Aplay filename.wav  ```
-
+* Use this command: ```arecord -f cd -r 44100 -c 1 -D plughw:1,0 -v recording.wav``` with "-v" used to display detailed information about the audio capture process or ```arecord -f cd -r 44100 -c 1 -D plughw:1,0 recording.wav``` Replace "plughw:0,0" with the appropriate device name for your setup based on the output of the aplay -l command.
+* For mono system, use ```arecord -c 1 -r 48000 -f S32_LE -t wav -v filename.wav ``` or ``` Mono: arecord -f S32_LE -r 8000 -c 1 filename.wav  ```
+* To play the file, use ``` Aplay filename.wav  ```  
 
 # References
 
  * Alsa library
- * rpi-i2s repositorie: https://github.com/nejohnson2/rpi-i2s.git
+ * PortAudio library
+ * PulseAudio library
+ * SoundTouch library
+ * FFTW  library
+  
+
 
 ### To be added later
 Use the alsamixer command to configure ALSA settings and adjust microphone levels, this allows you to control the input volume and other audio settings.  
