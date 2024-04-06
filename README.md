@@ -91,7 +91,7 @@ g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
 * 3 files and main excute command: g++  main.cpp audio_processor.cpp -o class -lfftw3f -lportaudio -L/path/to/fftw/library/directory
 
 <div style="text-align:center;">
-  <img src="https://raw.githubusercontent.com/Muh-Sadik/RacketRhythm/main/assets/127529383/7a793f4f-17d1-451c-ac22-ea3cb2f327bd.png" alt="QR Code" width="100" height="100">
+  <img src="https://raw.githubusercontent.com/Muh-Sadik/RacketRhythm/main/assets/127529383/7a793f4f-17d1-451c-ac22-ea3cb2f327bd.png" alt="QR Code" width="200" height="200">
 </div>
 
 
