@@ -91,8 +91,7 @@ g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
 * 3 files and main excute command: g++  main.cpp audio_processor.cpp -o class -lfftw3f -lportaudio -L/path/to/fftw/library/directory
  
 
+![Instagram_qr-code (1)](https://github.com/Muh-Sadik/Test/assets/157655580/a721a13c-2f22-4fd1-9509-305455280723)
 
-![Instagram_qr-code (1)](https://github.com/Muh-Sadik/Test/assets/157655580/8f94a936-99c9-4416-8f38-baa0174d8a87)
-
-
+ 
 
