@@ -92,7 +92,7 @@ g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
 
  
 <div style="text-align:center">
-  <img src="https://github.com/Muh-Sadik/Test/assets/157655580/a22e043b-b515-43f9-b24f-d72ecf842bb3" alt="QR Code" width="auto" height="auto">
+  <img src="https://github.com/Muh-Sadik/Test/assets/157655580/a22e043b-b515-43f9-b24f-d72ecf842bb3" alt="QR Code">
 </div>
 
 
