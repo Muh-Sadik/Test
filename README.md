@@ -90,9 +90,13 @@ g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory
 
 * 3 files and main excute command: g++  main.cpp audio_processor.cpp -o class -lfftw3f -lportaudio -L/path/to/fftw/library/directory
 
- <p align="center">
-  <img src="https://github.com/Muh-Sadik/Test/assets/157655580/a22e043b-b515-43f9-b24f-d72ecf842bb3" width="auto" height="auto">
-</p>
+ 
+<div style="text-align:center">
+  <img src="https://github.com/Muh-Sadik/Test/assets/157655580/a22e043b-b515-43f9-b24f-d72ecf842bb3" alt="QR Code" width="auto" height="auto">
+</div>
+
+
 
 ![Instagram_qr-code](https://github.com/Muh-Sadik/Test/assets/157655580/a22e043b-b515-43f9-b24f-d72ecf842bb3)
+
 
