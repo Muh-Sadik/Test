@@ -1,3 +1,6 @@
+last for file plying:sudo apt-get install libsndfile1-dev
+g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp src/game_start.cpp -o game_startsound -Iinclude -lfftw3f -lportaudio -lasound -lsndfile
+
 g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp -o tempovolume -Iinclude -lfftw3f -lportaudio -lasound
 
 for tempo: g++ main.cpp ball_contact_count.cpp contact_detector.cpp tempo.cpp ALSACapture_Tempomusic.cpp -o tempo -I /usr/include/soundtouch/ -L /usr/lib/arm-linux-gnueabihf/ -lfftw3f -lportaudio -lasound -lSoundTouch
