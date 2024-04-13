@@ -1,3 +1,8 @@
+# Last commmand:
+g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp -o RacketRhythm_V1.0 -Iinclude -lfftw3f -lportaudio -lasound
+
+
+
 last for file plying:sudo apt-get install libsndfile1-dev
 g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp src/game_start.cpp -o game_startsound -Iinclude -lfftw3f -lportaudio -lasound -lsndfile
 
