@@ -21,6 +21,10 @@
 6-Adjust the ID's of PLAYBACK Hardware Devices:  
 * Use aplay -l to check the list of connected hardware devices and change the below device numbers accordingly.
 
+```https://github.com/Muh-Sadik/RacketRhythm/blob/3dd21cd3761f9f555ff87d452df89c9c807c063c/RacketRhythm_V1.0/src/main.cpp#L43```
+
+```https://github.com/Muh-Sadik/RacketRhythm/blob/3dd21cd3761f9f555ff87d452df89c9c807c063c/RacketRhythm_V1.0/src/main.cpp#L110C1-L111C121```
+
 7-Compile/CMake:
 * Compile the RacketRhythm_V1.0 code using CMakeLists or any appropriate compiler.
 
