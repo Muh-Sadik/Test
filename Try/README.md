@@ -1,7 +1,7 @@
 # Setting up Instructions
 1-Clone the Repository 
 * Clone the Racket Rhythm repository to your local machine and use the last version contained in RacketRhythm_V1.0 folder to run needed commands. 
-Note: src file under the master branch was used for development and initial testing and debugging for systems different devices.
+* Note: src file under the master branch was used for development and initial testing and debugging for systems different devices.
 
 2-Hardware Setup:
 * Connect Adrafruit I2S MEMs Microphone breakout boards to Raspberry Pi GPIO pins according to provided specifications in the main README file.
