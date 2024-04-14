@@ -10,14 +10,15 @@ g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.c
 
 for tempo: g++ main.cpp ball_contact_count.cpp contact_detector.cpp tempo.cpp ALSACapture_Tempomusic.cpp -o tempo -I /usr/include/soundtouch/ -L /usr/lib/arm-linux-gnueabihf/ -lfftw3f -lportaudio -lasound -lSoundTouch
 # Racket Rhythm - sudo raspi-config
-Introducing Racket Rhythm: an engaging ping pong experience where gameplay consistency is driven by music. Players maintain rallies to keep the music flowing, with each hit shaping the rhythm. Music tempo adjusts based on gameplay speed, creates a real-time system which offers a dynamic challenge for all skill levels. Experience the fusion of ping pong and rhythm in Racket Rhythm!
+# Racket Rhythm
+Introducing Racket Rhythm: an engaging ping pong experience where gameplay consistency is driven by music. Players maintain rallies to keep the music flowing, with each hit shaping the rhythm. Music Sound adjusts based on gameplay speed, creates a real-time system which offers a dynamic challenge for all skill levels. Experience the fusion of ping pong and rhythm in Racket Rhythm!
 
 Instagram: https://www.instagram.com/racket.rhythm/
 
 # Key Features
 * Music-driven gameplay.
 * Targets amateur players improving on consistency.
-* Dynamic tempo adjustments for players of all levels.
+* Dynamic Sound adjustments for players of all levels.
 
 # Hardware Setup
 Adrafruit I2S MEMs Microphone breakout board-SPH0645 was used in this setup. 
@@ -66,25 +67,30 @@ $ sudo apt install libasound2-dev
 $ sudo apt-get install alsa-utils sox
  ```
 * Install PortAudio library: ``` sudo apt-get install portaudio19-dev ```
-* Install SoundTouch library: ``` sudo apt install libsoundtouch-dev ```
 * Install FFTW library: ``` sudo apt-get install libfftw3-dev ```
-* Install PulseAudio library: ``` sudo apt install pulseaudio ```
 
 **Test the Microphone:**
  
 * Use this command: ```arecord -f cd -r 44100 -c 1 -D plughw:1,0 -v recording.wav``` with "-v" used to display detailed information about the audio capture process or ```arecord -f cd -r 44100 -c 1 -D plughw:1,0 recording.wav``` Replace "plughw:0,0" with the appropriate device name for your setup based on the output of the aplay -l command.
 * For mono system, use ```arecord -c 1 -r 48000 -f S32_LE -t wav -v filename.wav ``` or ``` Mono: arecord -f S32_LE -r 8000 -c 1 filename.wav  ```
-* To play the file, use ``` Aplay filename.wav  ```  
+* To play the file, use ``` Aplay filename.wav  ```
+  
+# Authors
+ * Muhammed Sadik(2938316S)
+ * Haroun Asher(2459396A)
+ * Shaker Yasir(2834206M)
+ * Hancheng Wang(2944209W)
+ 
 
 # References
 
  * Alsa library
  * PortAudio library
- * PulseAudio library
- * SoundTouch library
  * FFTW  library
-  
 
+<p align="center">
+  <img src="https://github.com/Muh-Sadik/RacketRhythm/assets/157655580/689d6b9b-1b2b-4e73-951a-2b96bb608341" width="auto" height="auto">
+</p>
 
 ### To be added later
 Use the alsamixer command to configure ALSA settings and adjust microphone levels, this allows you to control the input volume and other audio settings.  
