@@ -103,5 +103,5 @@ $ sudo apt-get install alsa-utils sox
 
  **Installation Steps:**
  * Clone the repository to your local machine.
-
+git clone https://github.com/Muh-Sadik/RacketRhythm.git
 
