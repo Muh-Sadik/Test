@@ -1,12 +1,8 @@
 # Last commmand:
 g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp -o RacketRhythm_V1.0 -Iinclude -lfftw3f -lportaudio -lasound
 
-
-
 last for file plying:sudo apt-get install libsndfile1-dev
 g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp src/game_start.cpp -o game_startsound -Iinclude -lfftw3f -lportaudio -lasound -lsndfile
-
-g++ src/main.cpp src/ball_contact_count.cpp src/contact_detector.cpp src/tempo.cpp src/ALSACapture.cpp -o tempovolume -Iinclude -lfftw3f -lportaudio -lasound
 
 for tempo: g++ main.cpp ball_contact_count.cpp contact_detector.cpp tempo.cpp ALSACapture_Tempomusic.cpp -o tempo -I /usr/include/soundtouch/ -L /usr/lib/arm-linux-gnueabihf/ -lfftw3f -lportaudio -lasound -lSoundTouch
 # Racket Rhythm - sudo raspi-config
@@ -93,24 +89,6 @@ $ sudo apt-get install alsa-utils sox
 </p>
 
 ### To be added later
-Use the alsamixer command to configure ALSA settings and adjust microphone levels, this allows you to control the input volume and other audio settings.  
-Run alsamixer from the terminal and use the arrow keys to navigate and adjust the settings.  
-*Try this recording command: ```arecord -D plughw:1 -f cd test.wav``` what is the differenec from the ones we used before?  
-*Add the data shett page - important - chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/908/SPH0645LM4H-B.pdf
-
-* Adafruit link: https://www.digikey.co.uk/en/products/detail/adafruit-industries-llc/3421/6691114?utm_adgroup=&utm_term=&productid=6691114&utm_content=&gad_source=1
-OR
-https://www.adafruit.com/product/3421
-
-g++ -o D D.cpp -lfftw3f -lportaudio -L/path/to/fftw/library/directory  
-
-* 3 files and main excute command: g++  main.cpp audio_processor.cpp -o class -lfftw3f -lportaudio -L/path/to/fftw/library/directory
  
-
- 
-<p align="center">
-  <img src="https://github.com/Muh-Sadik/Test/assets/157655580/a721a13c-2f22-4fd1-9509-305455280723" width="auto" height="auto">
-</p>
-
 
 
